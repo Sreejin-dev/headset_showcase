@@ -13,8 +13,8 @@ const Product = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: null, // Remove the previous button
-    nextArrow: null, // Remove the next button
+    prevArrow: undefined, // Remove the previous button
+    nextArrow: undefined, // Remove the next button
   };
   return (
     <div className="p-10 font-bold">
