@@ -85,8 +85,8 @@ const Product = () => {
               {item.text}
             </h1>
             <div className="flex text-center items-center justify-between mt-4 w-full ">
-              <span className="text-lg font-bold">30$</span>
-              <button className="text-lg text-white font-mono font-semibold bg-orange-600 rounded-3xl h-7 flex items-center p-2">Add to cart</button>
+              <span className="text-lg font-bold">$126</span>
+              <button className="text-lg text-white  font-semibold bg-orange-600 rounded-3xl h-7 flex items-center p-2">Add to cart</button>
             </div>
           </motion.div>
         ))}
