@@ -28,14 +28,14 @@ const Hero = () => {
             duration: 0.5,
             ease: "easeInOut",
           }}
-          className="gap-1 flex flex-col text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold relative top-5"
+          className="gap-1 flex flex-col text-2xl md:text-3xl lg:text-5xl xl:text-6xl font-bold relative top-5"
         >
           <div className="md:gap-5 gap-2 flex ">
             Unveiling <span className="text-red-500">Headphone</span>
           </div>
           Wonders
         </motion.h1>
-        <p className="text-gray-500 md:text-xs text-xs xl:text-xl font-semibold">
+        <p className="text-gray-500 md:text-xs text-sm xl:text-xl font-semibold">
           {" "}
           Epix-Sound Presents A Meticulously Curated Collection <br /> of
           Headphones That Redefine Your Audio Experience. <br />
