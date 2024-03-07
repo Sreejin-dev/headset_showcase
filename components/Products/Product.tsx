@@ -45,13 +45,13 @@ const Product = () => {
      className="px-10  ">
         <Slider ref={sliderRef} {...settings}>
           <div className="slider-content p-5 ">
-            <h1 className="md:text-5xl">
+            <h1 className="md:text-5xl text-xl">
               The Market Provides <br />
               Hot<span style={{ color: "red" }}> Products</span>
             </h1>
           </div>
           <div className="slider-content p-5">
-            <h1 className="md:text-5xl">
+            <h1 className="md:text-5xl text-xl">
               Available In <br />
               All<span style={{ color: "red" }}> Stores</span>
             </h1>
