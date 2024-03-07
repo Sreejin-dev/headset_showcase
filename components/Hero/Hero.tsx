@@ -52,7 +52,7 @@ const Hero = () => {
             <div className="relative left-2 bottom-5">
               {" "}
               <Image src={miniheadset} width={70} alt="" />
-              <span className="font-sans font-bold flex transition-transform -rotate-6 relative bottom-1">
+              <span className="font-sans font-bold flex transition-transform -rotate-6 relative bottom-1 text-sky-500">
                 30% Off
               </span>
             </div>
