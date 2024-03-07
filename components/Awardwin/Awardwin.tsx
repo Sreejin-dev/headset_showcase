@@ -27,7 +27,7 @@ const Awardwin = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="w-full items-center flex"
+        className="w-full p-1 items-center flex"
       >
         <Image src={aheadset} alt="" />
       </motion.div>
