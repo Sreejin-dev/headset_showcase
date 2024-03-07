@@ -18,7 +18,7 @@ const Awardwin = () => {
         ease: "easeInOut",
       }}
       id="feature"
-      className="md:flex  pt-10"
+      className="md:flex p-2 pt-10"
     >
       <motion.div
         whileInView={{ x: 0 }}
@@ -27,7 +27,7 @@ const Awardwin = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="w-full p-1 items-center flex"
+        className="w-full  items-center flex"
       >
         <Image src={aheadset} alt="" />
       </motion.div>
@@ -40,7 +40,7 @@ const Awardwin = () => {
         }}
         className="w-full  items-center flex flex-col pt-10"
       >
-        <h1 className="font-bold lg:text-5xl text-5xl md:text-4xl  pb-10 ">
+        <h1 className="font-bold lg:text-5xl text-4xl md:text-4xl  pb-10 ">
           {" "}
           Award-Winning <br />
           True <span style={{ color: "red" }}>Wireless</span> <br />
@@ -60,7 +60,7 @@ const Awardwin = () => {
                   height={50}
                   alt={item.text}
                 />{" "}
-                <h1 className="text-4xl lg:text-4xl   font-bold leading-relaxed">
+                <h1 className="text-3xl lg:text-4xl   font-bold leading-relaxed">
                   {item.text}
                 </h1>
               </div>
