@@ -32,6 +32,8 @@ const Product = () => {
       ease: "easeInOut",
     }}
 
+    id="product"
+
      className="p-10 font-bold w-screen">
       <motion.div
     whileInView={{ x:0 }}

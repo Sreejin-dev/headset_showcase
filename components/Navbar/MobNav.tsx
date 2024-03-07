@@ -57,18 +57,18 @@ const MobNav = () => {
         <div className="p-5">
           <nav className="pointer-events-auto ">
             <ul className="flex flex-col gap-5 text-2xl  font-bold text-black transition-all">
-              <li>
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">Product</a>
-              </li>
-              <li>
-                <a href="#">About Us</a>
-              </li>
+            <li>
+              <a href="#Home">Home</a>
+            </li>
+            <li>
+              <a href="#feature">Features</a>
+            </li>
+            <li>
+              <a href="#product">Product</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
             </ul>
 
             <div className="flex pt-5">

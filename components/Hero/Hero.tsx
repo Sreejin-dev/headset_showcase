@@ -17,6 +17,7 @@ const Hero = () => {
         duration: 0.8,
         ease: "easeInOut",
       }}
+      id="Home"
       className="px-10 flex h-screen pt-10"
     >
       <div className="flex flex-col justify-center gap-10 w-full">
@@ -88,7 +89,7 @@ const Hero = () => {
       {/* right section */}
       <motion.div
         whileInView={{ x: 0 }}
-        initial={{ x: -100 }}
+        initial={{ x: 100 }}
         transition={{
           duration: 1,
           ease: "easeInOut",

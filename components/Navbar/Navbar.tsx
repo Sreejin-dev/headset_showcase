@@ -14,16 +14,16 @@ const Navbar = () => {
         <nav className="flex gap-5 max-lg:hidden items-center">
           <ul className="flex gap-10 font-bold text-sm items-center">
             <li>
-              <a href="#">Home</a>
+              <a href="#Home">Home</a>
             </li>
             <li>
-              <a href="#">Features</a>
+              <a href="#feature">Features</a>
             </li>
             <li>
-              <a href="#">Product</a>
+              <a href="#product">Product</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#about">About Us</a>
             </li>
           </ul>
 

@@ -17,6 +17,7 @@ const Awardwin = () => {
         duration: 0.8,
         ease: "easeInOut",
       }}
+      id="feature"
       className="md:flex  pt-10"
     >
       <motion.div
