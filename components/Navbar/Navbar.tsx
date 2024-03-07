@@ -1,25 +1,14 @@
-
-"use client"
+"use client";
 import React from "react";
 import search from "@/assets/search.png";
 import heart from "@/assets/heart.png";
 import basket from "@/assets/basket.png";
 import Image from "next/image";
 import MobNav from "./MobNav";
-import { motion } from "framer-motion";
 
 const Navbar = () => {
   return (
-    <motion.div
-    whileInView={{ opacity:1 }}
-    initial={{ opacity:0 }}
-    transition={{
-      duration: 0.8,
-      ease: "easeInOut",
-    }}
-    
-      className="px-10 pt-5 w-full"
-    >
+    <div className="px-10 pt-5 w-full">
       <div className="flex justify-between">
         <h1 className="font-bold text-lg">Epic-Sound</h1>
         <nav className="flex gap-5 max-lg:hidden items-center">
@@ -54,15 +43,15 @@ const Navbar = () => {
           </div>
           {/* icon */}
           <div className="w-8 flex items-center h-5">
-            <Image src={heart} alt="" className="cursor-pointer"/>
+            <Image src={heart} alt="" className="cursor-pointer" />
           </div>
           <div className="w-8 flex items-center h-5">
-            <Image src={basket} alt="" className="cursor-pointer"/>
+            <Image src={basket} alt="" className="cursor-pointer" />
           </div>
         </nav>
       </div>
       <MobNav />
-    </motion.div>
+    </div>
   );
 };
 

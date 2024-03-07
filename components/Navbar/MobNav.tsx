@@ -19,7 +19,7 @@ const MobNav = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`w-20 absolute right-0 h-10   text-black pointer-events-auto  ${
+        className={`w-20  left-3/4 h-10 sticky  text-black pointer-events-auto  ${
           hidden ? "hidden" : "block"
         }`}
         onClick={toggleHidden}
@@ -37,7 +37,7 @@ const MobNav = () => {
         viewBox="0 0 24 24"
         strokeWidth={1.5}
         stroke="currentColor"
-        className={`text-black   absolute z-20 right-0 w-20 h-10 pointer-events-auto ${
+        className={`text-black   sticky left-3/4 z-20 right-0 w-20 h-10 pointer-events-auto ${
           hidden ? "block" : "hidden"
         }`}
         onClick={toggleHidden}

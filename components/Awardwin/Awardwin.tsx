@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import battery1 from "@/assets/battery-charge.png";
 import battery2 from "@/assets/charging-battery.png";
@@ -11,30 +11,34 @@ import React from "react";
 const Awardwin = () => {
   return (
     <motion.div
-    whileInView={{ opacity:1 }}
-    initial={{ opacity:0 }}
-    transition={{
-      duration: 0.8,
-      ease: "easeInOut",
-    }} className="md:flex  ">
-       <motion.div
-          whileInView={{ x:0 }}
-          initial={{ x:-100 }}
-          transition={{
-            duration: 0.8,
-            ease: "easeInOut",
-          }}
-           className="w-full items-center flex">
+      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+      className="md:flex  pt-10"
+    >
+      <motion.div
+        whileInView={{ x: 0 }}
+        initial={{ x: -100 }}
+        transition={{
+          duration: 0.8,
+          ease: "easeInOut",
+        }}
+        className="w-full items-center flex"
+      >
         <Image src={aheadset} alt="" />
       </motion.div>
       <motion.div
-          whileInView={{ x:0 }}
-          initial={{ x:100 }}
-          transition={{
-            duration: 1,
-            ease: "easeInOut",
-          }}
-           className="w-full items-center flex flex-col pt-10">
+        whileInView={{ x: 0 }}
+        initial={{ x: 100 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+        }}
+        className="w-full items-center flex flex-col pt-10"
+      >
         <h1 className="font-bold lg:text-5xl text-3xl md:text-3xl  pb-10 ">
           {" "}
           Award-Winning <br />
@@ -55,7 +59,9 @@ const Awardwin = () => {
                   height={50}
                   alt={item.text}
                 />{" "}
-                <h1 className="text-xl lg:text-4xl text-5xl  font-bold leading-relaxed">{item.text}</h1>
+                <h1 className="text-xl lg:text-4xl text-5xl  font-bold leading-relaxed">
+                  {item.text}
+                </h1>
               </div>
 
               <p className="text-xs text-center  w-full left-16 text-gray-700">
@@ -73,4 +79,3 @@ const Awardwin = () => {
 };
 
 export default Awardwin;
-

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -17,7 +17,7 @@ const Hero = () => {
         duration: 0.8,
         ease: "easeInOut",
       }}
-      className="px-10 flex h-screen"
+      className="px-10 flex h-screen pt-10"
     >
       <div className="flex flex-col justify-center gap-10 w-full">
         <motion.h1
@@ -60,8 +60,8 @@ const Hero = () => {
         </div>
         {/* card */}
         <motion.div
-          whileInView={{ x:0 }}
-          initial={{ x:-100 }}
+          whileInView={{ x: 0 }}
+          initial={{ x: -100 }}
           transition={{
             duration: 0.8,
             ease: "easeInOut",
