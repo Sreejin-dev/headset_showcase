@@ -34,7 +34,7 @@ const Product = () => {
 
     id="product"
 
-     className="p-10 font-bold w-screen">
+     className="md:p-10 p-2 font-bold w-screen">
       <motion.div
     whileInView={{ x:0 }}
     initial={{ x:200 }}

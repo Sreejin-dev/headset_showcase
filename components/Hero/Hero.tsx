@@ -18,7 +18,7 @@ const Hero = () => {
         ease: "easeInOut",
       }}
       id="Home"
-      className="px-10 flex h-screen pt-10"
+      className="md:px-10 px-2 flex h-screen pt-10"
     >
       <div className="flex flex-col justify-center gap-10 w-full">
         <motion.h1

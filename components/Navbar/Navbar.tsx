@@ -8,7 +8,7 @@ import MobNav from "./MobNav";
 
 const Navbar = () => {
   return (
-    <div className="px-10 pt-5 w-full">
+    <div className="md:px-10 px-2 pt-5 w-full">
       <div className="flex justify-between">
         <h1 className="font-bold text-lg">Epic-Sound</h1>
         <nav className="flex gap-5 max-lg:hidden items-center">

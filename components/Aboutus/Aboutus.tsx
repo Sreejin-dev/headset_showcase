@@ -9,7 +9,7 @@ import twitter from "@/assets/icons/twitter.png";
 
 const Aboutus = () => {
   return (
-    <div id="about" className="px-10 pt-5 w-full bg-white">
+    <div id="about" className="md:px-10 px-2 pt-5 w-full bg-white">
       <div className="flex justify-between max-md:flex-col ">
         <h1 className="font-bold text-lg">Epic-Sound</h1>
         <nav className="flex gap-5 items-center max-md:pt-10 max-md:justify-center">
