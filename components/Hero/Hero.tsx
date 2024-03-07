@@ -76,12 +76,12 @@ const Hero = () => {
           <div className="flex gap-20">
             <div>
               {" "}
-              <Image src={demo1} width={120} alt="" />
+              <Image src={demo1} width={100} alt="" />
             </div>
 
             <div>
               {" "}
-              <Image src={demo2} width={120} alt="" />
+              <Image src={demo2} width={100} alt="" />
             </div>
           </div>
         </motion.div>
