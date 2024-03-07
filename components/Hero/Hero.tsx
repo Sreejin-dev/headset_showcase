@@ -1,20 +1,39 @@
+"use client"
 import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import compass from "@/assets/compass.png";
 import miniheadset from "@/assets/miniheadphone.png";
-import demo2 from '@/assets/demo2.webp'
-import demo1 from '@/assets/demo1.webp'
-import mainhead from '@/assets/mainhead.png'
-import Image from "next/image";
+import demo2 from "@/assets/demo2.webp";
+import demo1 from "@/assets/demo1.webp";
+import mainhead from "@/assets/mainhead.png";
+
 const Hero = () => {
   return (
-    <div className="px-10 flex">
-      <div className="flex  flex-col justify-center gap-10 w-full ">
-        <h1 className="gap-1 flex flex-col text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold relative top-5">
+    <motion.div
+      whileInView={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      transition={{
+        duration: 0.8,
+        ease: "easeInOut",
+      }}
+      className="px-10 flex h-screen"
+    >
+      <div className="flex flex-col justify-center gap-10 w-full">
+        <motion.h1
+          whileInView={{ x: 0 }}
+          initial={{ x: -100 }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+          className="gap-1 flex flex-col text-xl md:text-3xl lg:text-5xl xl:text-6xl font-bold relative top-5"
+        >
           <div className="md:gap-5 gap-2 flex ">
             Unveiling <span className="text-red-500">Headphone</span>
           </div>
           Wonders
-        </h1>
+        </motion.h1>
         <p className="text-gray-500 md:text-xs text-xs xl:text-xl font-semibold">
           {" "}
           Epix-Sound Presents A Meticulously Curated Collection <br /> of
@@ -22,7 +41,7 @@ const Hero = () => {
           Immerse Yourself in Rich.{" "}
         </p>
         <div className="flex">
-          <div className="flex  items-center">
+          <div className="flex items-center">
             {" "}
             <button className="text-center w-36 h-[60px] rounded-3xl bg-[#fd6412] font-bold text-lg rounded-e-none text-white">
               Explore More
@@ -40,10 +59,21 @@ const Hero = () => {
           </div>
         </div>
         {/* card */}
-        <div className="w-[20rem] bg-[#fcd690] p-5   items-center flex flex-col" style={{borderRadius:"5rem 10px "}}>
-          <div className="font-bold bg-red-600 text-white  rounded-3xl p-2">Demo</div>
+        <motion.div
+          whileInView={{ x:0 }}
+          initial={{ x:-100 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          className="w-15 md:w-[20rem] bg-[#fcd690] p-5 items-center flex flex-col"
+          style={{ borderRadius: "5rem 10px " }}
+        >
+          <div className="font-bold bg-red-600 text-white  rounded-3xl p-2">
+            Demo
+          </div>
           <div className="flex gap-20">
-            <div >
+            <div>
               {" "}
               <Image src={demo1} width={120} alt="" />
             </div>
@@ -53,13 +83,25 @@ const Hero = () => {
               <Image src={demo2} width={120} alt="" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       {/* right section */}
-      <div className=" w-full  justify-center items-center h-full flex">
-        <Image src={mainhead} alt="" className="object-contain md:block hidden+" />
-      </div>
-    </div>
+      <motion.div
+        whileInView={{ x: 0 }}
+        initial={{ x: -100 }}
+        transition={{
+          duration: 1,
+          ease: "easeInOut",
+        }}
+        className="w-full md:block hidden justify-center items-center h-full flex"
+      >
+        <Image
+          src={mainhead}
+          alt=""
+          className="object-contain md:block hidden+"
+        />
+      </motion.div>
+    </motion.div>
   );
 };
 

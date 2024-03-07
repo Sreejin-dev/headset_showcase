@@ -7,7 +7,14 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
+html{
+  overflow-x: hidden;
+}
 body{
   background: antiquewhite;
 
+}
+.slick-arrow::before{
+  color: #fd6412 !important;
+  font-size: 2rem !important  ;
 }
