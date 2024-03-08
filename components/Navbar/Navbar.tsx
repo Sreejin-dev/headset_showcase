@@ -7,6 +7,12 @@ import Image from "next/image";
 import MobNav from "./MobNav";
 
 const Navbar = () => {
+  function scrollToDiv(divId: string): void {
+    const element = document.getElementById(divId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   return (
     <div className="md:px-10 px-2 pt-5 w-full">
       <div className="flex justify-between">
@@ -14,16 +20,16 @@ const Navbar = () => {
         <nav className="flex gap-5 max-lg:hidden items-center">
           <ul className="flex gap-10 font-bold text-sm items-center">
             <li>
-              <a href="#Home">Home</a>
+              <p className="cursor-pointer" onClick={() => scrollToDiv('Home')}>Home</p>
             </li>
             <li>
-              <a href="#feature">Features</a>
+              <p className="cursor-pointer" onClick={() => scrollToDiv('feature')}>Features</p>
             </li>
             <li>
-              <a href="#product">Product</a>
+              <p className="cursor-pointer" onClick={() => scrollToDiv('product')}>Product</p>
             </li>
             <li>
-              <a href="#about">About Us</a>
+            <p className="cursor-pointer" onClick={() => scrollToDiv('about')}>About Us</p>
             </li>
           </ul>
 

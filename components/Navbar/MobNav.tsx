@@ -7,6 +7,13 @@ import heart from "@/assets/heart.png";
 import basket from "@/assets/basket.png";
 import Image from "next/image";
 const MobNav = () => {
+
+  function scrollToDiv(divId: string): void {
+    const element = document.getElementById(divId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
   const [hidden, setHidden] = useState(false);
 
   const toggleHidden = () => setHidden(!hidden);
@@ -58,16 +65,16 @@ const MobNav = () => {
           <nav className="pointer-events-auto ">
             <ul className="flex flex-col gap-5 text-2xl  font-bold text-black transition-all">
             <li>
-              <a href="#Home">Home</a>
+              <p className="cursor-pointer" onClick={() => scrollToDiv('Home')}>Home</p>
             </li>
             <li>
-              <a href="#feature">Features</a>
+              <p className="cursor-pointer" onClick={() => scrollToDiv('feature')}>Features</p>
             </li>
             <li>
-              <a href="#product">Product</a>
+              <p className="cursor-pointer" onClick={() => scrollToDiv('product')}>Product</p>
             </li>
             <li>
-              <a href="#about">About Us</a>
+            <p className="cursor-pointer" onClick={() => scrollToDiv('about')}>About Us</p>
             </li>
             </ul>
 
