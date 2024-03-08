@@ -39,7 +39,7 @@ const Aboutus = () => {
       </div>
       <br />
       <div className="w-full h-[0.5px] bg-black"></div>
-      <p className="text-center text-sm font-medium pt-10">@copyright@2023</p>
+      <p className="text-center text-sm font-medium pt-10">@copyright@2024</p>
    
       <p className="text-center text-xs font-medium py-2">created by Sreejin</p>
     </div>
